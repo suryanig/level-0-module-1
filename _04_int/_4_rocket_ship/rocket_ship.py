@@ -19,12 +19,15 @@ def mouse_pressed(event):
     
     # This defines the x and y coordinated of all three points
     # of a triangle
+    canvas.create_oval(x-90, y+70, x+90, y+250, fill="red", outline="black")
+    canvas.create_oval(x-55, y+80, x+55, y+190, fill="orange", outline="black")
+    canvas.create_oval(x-30, y+90, x+30, y+150, fill="yellow", outline="black")
     points = [x, y, x - 50, y + 100, x + 50, y + 100]
     canvas.create_polygon(points, fill='gray', width=2) # draws triangle
     
     # 1. Add details to your rocket to make it look better. You can look at
     #    rocket.png for inspiration.
-    
+
     # 2. Modify the locations of the shapes above so the rocket will be drawn
     #    where the mouse is clicked
     
